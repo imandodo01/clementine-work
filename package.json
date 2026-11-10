@@ -17,7 +17,6 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "@vitejs/plugin-react": "^5.0.4",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
@@ -33,6 +32,7 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.44.1",
     "vite": "^7.1.12",
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "@vitejs/plugin-react": "^5.0.4"
   }
 }
