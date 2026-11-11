@@ -12,6 +12,9 @@ describe("Clementine Work", () => {
     expect(markup).toContain("steampunk-skull");
     expect(markup).toContain("The collection is taking shape.");
     expect(markup).toContain("Independent products");
+    expect(markup).toContain('id="home"');
+    expect(markup).toContain('id="works"');
+    expect(markup).toContain('id="workshop"');
     expect(markup).not.toContain('href="#lab"');
     expect(markup).not.toContain('href="#notes"');
     expect(markup).not.toContain('id="lab"');

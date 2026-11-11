@@ -23,13 +23,13 @@ A digital workshop for building independent products, crafting useful digital so
 ## 4. Information architecture
 
 ### Home
-Workshop identity, concise positioning, primary visual emblem, and selected calls to action.
-
-### Workshop
-What Clementine Work is, its working principles, and the three activity areas.
+Workshop identity, concise positioning, primary visual emblem, and selected calls to action. The section uses a viewport-height editorial composition.
 
 ### Works
-Selected products and projects, with accurate status, role, scope, and public links.
+Selected products and projects, with accurate status, role, scope, and public links. The section uses a viewport-height editorial composition.
+
+### Workshop
+What Clementine Work is, its working principles, and the three activity areas. The section uses a viewport-height editorial composition.
 
 ### Engineering Lab
 Experiments, prototypes, technical explorations, and learnings; clearly distinguish experiments from shipped products.
@@ -93,6 +93,7 @@ Primary identity: the detailed steampunk skull artwork. Secondary signature: Cle
 - [ ] Project scaffold installs cleanly from the lockfile.
 - [ ] Development and production build commands are documented.
 - [ ] Responsive page shell and navigation exist.
+- [ ] Home, Works, and Workshop use viewport-height section compositions without fixed-height content clipping or mandatory scroll snapping.
 - [ ] Initial page sections follow the approved information architecture.
 - [x] Primary skull artwork is integrated without destructive modification.
 - [ ] Secondary wordmark/silhouette asset is integrated when its approved source is available.
