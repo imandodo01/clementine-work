@@ -9,7 +9,7 @@ describe("Clementine Work", () => {
     expect(markup).toContain("INDEPENDENT DIGITAL WORKSHOP");
     expect(markup).toContain('aria-label="Main navigation"');
     expect(markup).toContain('aria-label="Collapse sidebar"');
-    expect(markup).toContain('src="/images/steampunk-skull.png"');
+    expect(markup).toContain("steampunk-skull");
     expect(markup).toContain("The collection is taking shape.");
     expect(markup).toContain("Independent products");
     expect(markup).not.toContain('href="#lab"');

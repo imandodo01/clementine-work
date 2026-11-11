@@ -124,7 +124,7 @@
   .heroFoot { gap: 1rem; font-size: .46rem; }
   .workstage { grid-template-columns: 1fr; gap: 1rem; min-height: 12rem; padding: 1.1rem; }
   .workstageMark { position: absolute; right: 1rem; bottom: 1rem; }
-  .workshopSection, .labSection { grid-template-columns: 1fr; }
+  .workshopSection { grid-template-columns: 1fr; }
   .workshopSection .sectionHeading, .workshopIntro, .activityList { grid-column: 1; grid-row: auto; }
   .activityList { margin-top: .5rem; }
   .sectionHeading { align-items: start; flex-direction: column; }

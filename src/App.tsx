@@ -1,11 +1,11 @@
 import { useState } from "react";
 import styles from "./App.module.css";
+import skullArtwork from "../images/steampunk-skull.png";
 
 const navigation = [
   { label: "Home", href: "#home" },
   { label: "Works", href: "#works" },
   { label: "Workshop", href: "#workshop" },
-
 ];
 
 function Mark({ name }: { name: "menu" | "close" | "collapse" }) {
@@ -59,7 +59,7 @@ export default function App() {
           </div>
           <div className={styles.heroEmblem} aria-hidden="true">
             <div className={styles.emblemFrame}>
-              <img src="/images/steampunk-skull.png" alt="" />
+              <img src={skullArtwork} alt="" />
               <span className={styles.emblemMark}>CW / 001</span>
             </div>
             <span className={styles.drawingLabel}>DESIGN / ENGINEERING / ITERATION</span>
