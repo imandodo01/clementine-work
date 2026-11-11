@@ -1,6 +1,6 @@
 # Content Inventory — Clementine Work
 
-**Status:** Working draft  
+**Status:** Content refinement — working draft  
 **Publication rule:** Do not present planned work, experiments, services, or a team as existing facts.
 
 ## Identity
@@ -45,3 +45,14 @@
 - Do not copy personal portfolio content into this brand without an explicit decision.
 - Use only approved project screenshots, assets, and public links.
 - Revisit the page when there is real work to feature or a public contact channel is selected.
+
+
+## Content refinement backlog
+
+- Add real, approved project entries to Works when a product or project is ready for public presentation.
+- Review the workshop introduction and activity descriptions for clarity and consistency.
+- Decide whether the approved secondary wordmark/silhouette asset will be included.
+- Complete an editorial pass for consistency, clarity, and fit with the implemented layout.
+- Keep Engineering Lab, Notes, and Contact deferred until their publication conditions are met.
+
+The development foundation and local verification are complete. This backlog is editorial and content-dependent; it does not imply additional feature development is required.
