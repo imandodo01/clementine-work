@@ -5,7 +5,7 @@ import App from "./App";
 describe("Clementine Work", () => {
   it("puts the workshop and works collection before supporting information", () => {
     const markup = renderToStaticMarkup(<App />);
-    expect(markup.indexOf("Selected work.")).toBeLessThan(markup.indexOf("The workshop"));
+    expect(markup.indexOf("Selected work.")).toBeLessThan(markup.indexOf("Build. Craft. Explore."));
     expect(markup).toContain("INDEPENDENT DIGITAL WORKSHOP");
     expect(markup).toContain('aria-label="Main navigation"');
     expect(markup).toContain('aria-label="Collapse sidebar"');
