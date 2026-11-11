@@ -14,7 +14,7 @@ describe("Clementine Work", () => {
   it("does not invent released products or a team", () => {
     const markup = renderToStaticMarkup(<App />);
     expect(markup).toContain("Products and projects will appear here");
-    expect(markup).toContain("independent practice");
+    expect(markup).toContain("INDEPENDENT PRACTICE");
     expect(markup).not.toContain("Our team");
     expect(markup).not.toContain("Client portfolio");
   });

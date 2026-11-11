@@ -19,8 +19,8 @@
 .collapseButton svg, .mobileMenu svg { width: 1.2rem; height: 1.2rem; }
 .sidebarCollapsed .collapseButton { justify-content: center; }
 .sidebarCollapsed .collapseButton svg { transform: rotate(180deg); }
-.mainContent { width: min(100% - 16rem, 92rem); margin-left: 16rem; padding-inline: clamp(1.5rem, 4vw, 4rem); transition: margin-left 180ms ease; }
-.appShell:has(.sidebarCollapsed) .mainContent { width: min(100% - 5rem, 100rem); margin-left: 5rem; }
+.mainContent { width: calc(100% - 16rem); max-width: 92rem; margin-left: 16rem; padding-inline: clamp(1.5rem, 4vw, 4rem); transition: margin-left 180ms ease; }
+.appShell:has(.sidebarCollapsed) .mainContent { width: calc(100% - 5rem); max-width: 100rem; margin-left: 5rem; }
 .mobileMenu, .scrim { display: none; }
 .hero { position: relative; min-height: 27rem; display: grid; grid-template-columns: minmax(0, 1fr) minmax(12rem, .65fr); align-items: center; gap: 2rem; padding-block: 3rem 2.5rem; border-bottom: 1px solid rgb(176 141 87 / 24%); overflow: hidden; }
 .heroTopline, .heroFoot { display: flex; justify-content: space-between; grid-column: 1 / -1; color: var(--color-muted); font: .55rem var(--font-mono); letter-spacing: .12em; }
@@ -76,7 +76,7 @@
   .sidebarCollapsed .brandText, .sidebarCollapsed .navigation a > span:last-child, .sidebarCollapsed .sidebarFoot, .sidebarCollapsed .collapseButton span { display: initial; }
   .sidebarCollapsed .collapseButton { justify-content: flex-start; }
   .sidebarCollapsed .collapseButton svg { transform: none; }
-  .mainContent, .appShell:has(.sidebarCollapsed) .mainContent { width: 100%; margin-left: 0; padding-inline: 1.1rem; }
+  .mainContent, .appShell:has(.sidebarCollapsed) .mainContent { width: 100%; max-width: none; margin-left: 0; padding-inline: 1.1rem; }
   .mobileMenu { position: fixed; z-index: 25; top: .8rem; right: .8rem; display: grid; width: 2.8rem; height: 2.8rem; place-items: center; border: 1px solid rgb(176 141 87 / 35%); background: var(--color-charcoal); color: var(--color-ivory); }
   .scrim { position: fixed; z-index: 15; inset: 0; display: block; border: 0; background: rgb(0 0 0 / 58%); }
   .hero { grid-template-columns: 1fr; gap: 1rem; min-height: 0; padding-block: 5rem 1.5rem; }
