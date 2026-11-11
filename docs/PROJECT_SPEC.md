@@ -94,7 +94,8 @@ Primary identity: the detailed steampunk skull artwork. Secondary signature: Cle
 - [ ] Development and production build commands are documented.
 - [ ] Responsive page shell and navigation exist.
 - [ ] Initial page sections follow the approved information architecture.
-- [ ] Logo assets are integrated without destructive modification.
+- [x] Primary skull artwork is integrated without destructive modification.
+- [ ] Secondary wordmark/silhouette asset is integrated when its approved source is available.
 - [ ] Design tokens cover colors, typography, spacing, and borders.
 - [ ] Lint, typecheck, tests, and build run in CI.
 - [ ] No secrets, private data, or unapproved employer materials are present.
@@ -104,7 +105,7 @@ Primary identity: the detailed steampunk skull artwork. Secondary signature: Cle
 ## 11. Open decisions
 
 - Final domain and public contact channel.
-- Final approved logo variants and asset formats.
+- Final approved secondary wordmark/silhouette asset and format.
 - Final font hosting strategy (local or provider-hosted).
 - Exact project content, screenshots, and publication permissions.
 - Final deployment configuration and environment variables, if any.

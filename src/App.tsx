@@ -5,8 +5,7 @@ const navigation = [
   { label: "Home", href: "#home" },
   { label: "Works", href: "#works" },
   { label: "Workshop", href: "#workshop" },
-  { label: "Engineering Lab", href: "#lab" },
-  { label: "Notes", href: "#notes" },
+
 ];
 
 function Mark({ name }: { name: "menu" | "close" | "collapse" }) {
@@ -58,7 +57,13 @@ export default function App() {
             <p className={styles.heroIntro}>An independent digital workshop for building useful products, crafting digital solutions, and exploring software engineering.</p>
             <a className={styles.primaryAction} href="#works">Explore the work <span aria-hidden="true">↘</span></a>
           </div>
-          <div className={styles.heroDrawing} aria-hidden="true"><span className={styles.drawingRing} /><span className={styles.drawingCross}>＋</span><span className={styles.drawingLabel}>DESIGN / ENGINEERING / ITERATION</span></div>
+          <div className={styles.heroEmblem} aria-hidden="true">
+            <div className={styles.emblemFrame}>
+              <img src="/images/steampunk-skull.png" alt="" />
+              <span className={styles.emblemMark}>CW / 001</span>
+            </div>
+            <span className={styles.drawingLabel}>DESIGN / ENGINEERING / ITERATION</span>
+          </div>
           <div className={styles.heroFoot}><span>INDEPENDENT PRACTICE</span><span>INDUSTRIAL STEAMPUNK × FUTURISTIC BLUEPRINT</span></div>
         </section>
 
@@ -83,17 +88,6 @@ export default function App() {
             <article><span>02</span><div><h3>Digital solutions</h3><p>Practical software shaped around real problems and needs.</p></div></article>
             <article><span>03</span><div><h3>Engineering explorations</h3><p>Technical experiments and ideas explored through making.</p></div></article>
           </div>
-        </section>
-
-        <section id="lab" className={styles.labSection}>
-          <div><p className={styles.eyebrow}>03 / ENGINEERING LAB</p><h2>Ideas under examination.</h2></div>
-          <p>Experiments and prototypes will be documented here with a clear distinction between exploration and released work.</p>
-        </section>
-
-        <section id="notes" className={styles.notesSection}>
-          <p className={styles.eyebrow}>04 / NOTES</p>
-          <h2>Workshop notes.</h2>
-          <p>Technical writing and project notes will be published as they become ready to share.</p>
         </section>
 
         <footer className={styles.footer}><a href="#home">CLEMENTINE WORK</a><span>AN INDEPENDENT DIGITAL WORKSHOP</span><a href="#home">BACK TO TOP ↑</a></footer>

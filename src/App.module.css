@@ -22,7 +22,7 @@
 .mainContent { width: calc(100% - 16rem); max-width: 92rem; margin-left: 16rem; padding-inline: clamp(1.5rem, 4vw, 4rem); transition: margin-left 180ms ease; }
 .appShell:has(.sidebarCollapsed) .mainContent { width: calc(100% - 5rem); max-width: 100rem; margin-left: 5rem; }
 .mobileMenu, .scrim { display: none; }
-.hero { position: relative; min-height: 27rem; display: grid; grid-template-columns: minmax(0, 1fr) minmax(12rem, .65fr); align-items: center; gap: 2rem; padding-block: 3rem 2.5rem; border-bottom: 1px solid rgb(176 141 87 / 24%); overflow: hidden; }
+.hero { position: relative; min-height: min(90svh, 54rem); display: grid; grid-template-columns: minmax(0, 1fr) minmax(12rem, .65fr); align-items: center; gap: 2rem; padding-block: 3rem 2.5rem; border-bottom: 1px solid rgb(176 141 87 / 24%); overflow: hidden; }
 .heroTopline, .heroFoot { display: flex; justify-content: space-between; grid-column: 1 / -1; color: var(--color-muted); font: .55rem var(--font-mono); letter-spacing: .12em; }
 .heroTopline { align-self: start; }
 .heroCopy { position: relative; z-index: 2; }
@@ -31,17 +31,55 @@
 .hero h1 em { color: var(--color-brass); font-style: normal; }
 .heroIntro { max-width: 36rem; color: var(--color-muted); font-size: .98rem; line-height: 1.8; }
 .primaryAction { display: inline-flex; gap: .7rem; align-items: center; margin-top: 1rem; padding: .85rem 1rem; background: var(--color-brass); color: var(--color-obsidian); text-decoration: none; font-size: .78rem; font-weight: 650; }
-.heroDrawing { position: relative; display: grid; min-height: 16rem; place-items: center; opacity: .75; }
-.drawingRing { width: min(90%, 16rem); aspect-ratio: 1; border: 1px solid rgb(176 141 87 / 30%); border-radius: 50%; background: repeating-linear-gradient(0deg, transparent 0 22px, rgb(234 228 216 / 4%) 23px), repeating-linear-gradient(90deg, transparent 0 22px, rgb(234 228 216 / 4%) 23px); box-shadow: inset 0 0 3rem rgb(176 141 87 / 5%), 0 0 4rem rgb(0 0 0 / 25%); }
-.drawingRing::before, .drawingRing::after { position: absolute; content: ""; border: 1px solid rgb(176 141 87 / 22%); border-radius: 50%; }
-.drawingRing::before { inset: 18%; }
-.drawingRing::after { inset: 30%; border-style: dashed; }
-.drawingCross { position: absolute; color: var(--color-brass); font: 2rem var(--font-mono); }
+.heroEmblem { position: relative; display: grid; min-height: 22rem; place-items: center; }
+.emblemFrame {
+  position: relative;
+  display: grid;
+  width: min(100%, 23rem);
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid rgb(176 141 87 / 25%);
+  background:
+    linear-gradient(rgb(234 228 216 / 4%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(234 228 216 / 4%) 1px, transparent 1px),
+    radial-gradient(circle, rgb(176 141 87 / 9%), transparent 68%);
+  background-size: 24px 24px, 24px 24px, auto;
+}
+.emblemFrame::before, .emblemFrame::after {
+  position: absolute;
+  inset: 7%;
+  content: "";
+  border: 1px solid rgb(176 141 87 / 20%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.emblemFrame::after { inset: 15%; border-style: dashed; opacity: .65; }
+.emblemFrame img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 82%;
+  height: 82%;
+  object-fit: contain;
+  filter: drop-shadow(0 1rem 1.5rem rgb(0 0 0 / 38%));
+}
+.emblemMark {
+  position: absolute;
+  z-index: 2;
+  right: .8rem;
+  bottom: .8rem;
+  padding: .35rem .5rem;
+  border: 1px solid rgb(176 141 87 / 35%);
+  background: var(--color-obsidian);
+  color: var(--color-brass);
+  font: .52rem var(--font-mono);
+  letter-spacing: .1em;
+}
 .drawingLabel { position: absolute; bottom: .3rem; color: var(--color-muted); font: .48rem var(--font-mono); letter-spacing: .1em; }
 .heroFoot { align-self: end; }
-.worksSection, .workshopSection, .labSection, .notesSection { padding-block: 2.8rem; border-bottom: 1px solid rgb(176 141 87 / 20%); }
+.worksSection, .workshopSection { min-height: 48svh; padding-block: clamp(3rem, 7vh, 5rem); border-bottom: 1px solid rgb(176 141 87 / 20%); }
 .sectionHeading { display: flex; justify-content: space-between; align-items: end; gap: 1rem; margin-bottom: 1.25rem; }
-.sectionHeading h2, .labSection h2, .notesSection h2 { margin: .55rem 0 0; font: 500 clamp(1.7rem, 3vw, 2.6rem)/1.1 var(--font-heading); letter-spacing: -.045em; }
+.sectionHeading h2 { margin: .55rem 0 0; font: 500 clamp(1.7rem, 3vw, 2.6rem)/1.1 var(--font-heading); letter-spacing: -.045em; }
 .sectionMeta { color: var(--color-muted); font: .52rem var(--font-mono); letter-spacing: .1em; }
 .workstage { position: relative; display: grid; grid-template-columns: 9rem minmax(0, 1fr) auto; align-items: center; gap: 1.5rem; min-height: 13rem; padding: 1.5rem; overflow: hidden; border: 1px solid rgb(176 141 87 / 28%); background: linear-gradient(110deg, rgb(36 39 37 / 78%), rgb(23 24 23 / 70%)); }
 .workstage::before { position: absolute; inset: 0; content: ""; pointer-events: none; opacity: .35; background-image: linear-gradient(rgb(234 228 216 / 4%) 1px, transparent 1px), linear-gradient(90deg, rgb(234 228 216 / 4%) 1px, transparent 1px); background-size: 2rem 2rem; mask-image: linear-gradient(90deg, black, transparent 75%); }
@@ -62,9 +100,7 @@
 .activityList h3 { margin: 0; font: 500 1.05rem var(--font-heading); }
 .activityList p { margin: .35rem 0 0; color: var(--color-muted); font-size: .8rem; line-height: 1.6; }
 .labSection { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: end; }
-.labSection > p, .notesSection > p:last-child { max-width: 35rem; margin: 0; color: var(--color-muted); font-size: .88rem; line-height: 1.75; }
-.notesSection { max-width: 52rem; }
-.notesSection > p:last-child { margin-top: .8rem; }
+
 .footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding-block: 1.4rem; color: var(--color-muted); font: .53rem var(--font-mono); letter-spacing: .08em; }
 .footer a { color: inherit; text-decoration: none; }
 :global(:focus-visible) { outline: 2px solid var(--color-brass); outline-offset: 4px; }
@@ -81,7 +117,9 @@
   .scrim { position: fixed; z-index: 15; inset: 0; display: block; border: 0; background: rgb(0 0 0 / 58%); }
   .hero { grid-template-columns: 1fr; gap: 1rem; min-height: 0; padding-block: 5rem 1.5rem; }
   .hero h1 { font-size: clamp(2.7rem, 11vw, 4.2rem); }
-  .heroDrawing { position: absolute; top: 5rem; right: -2rem; width: 48%; min-height: 12rem; opacity: .35; }
+  .heroEmblem { position: absolute; top: 5rem; right: -2rem; width: 48%; min-height: 12rem; opacity: .38; }
+  .emblemFrame { width: 100%; }
+  .drawingLabel { display: none; }
   .heroTopline { padding-right: 3.2rem; }
   .heroFoot { gap: 1rem; font-size: .46rem; }
   .workstage { grid-template-columns: 1fr; gap: 1rem; min-height: 12rem; padding: 1.1rem; }
