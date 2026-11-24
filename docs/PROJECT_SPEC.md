@@ -1,6 +1,6 @@
 # Project Specification — Clementine Work
 
-**Status:** Draft 0.1  
+**Status:** Active — content refinement and pre-release  
 **Product type:** Static frontend website  
 **Tagline:** An Independent Digital Workshop
 
@@ -22,23 +22,25 @@ A digital workshop for building independent products, crafting useful digital so
 
 ## 4. Information architecture
 
-### Home
-Workshop identity, concise positioning, primary visual emblem, and selected calls to action.
+The current public page is a single-page workshop site with these sections:
 
-### Workshop
-What Clementine Work is, its working principles, and the three activity areas.
+### Home
+Workshop identity, concise positioning, primary visual emblem, and primary calls to action. Uses a viewport-height editorial composition.
 
 ### Works
-Selected products and projects, with accurate status, role, scope, and public links.
+Selected products and projects, with accurate status, role, scope, and public links. Currently displays an intentional empty state; do not automatically import personal projects from Iman Portfolio. Uses a viewport-height editorial composition.
 
-### Engineering Lab
-Experiments, prototypes, technical explorations, and learnings; clearly distinguish experiments from shipped products.
+### Workshop
+What Clementine Work is, its working principles, and the three activity areas: independent products, digital solutions, and engineering explorations. Uses a viewport-height editorial composition.
 
-### Notes
-Technical writing and project notes suitable for public release.
+### Engineering Lab — deferred
+Keep hidden until there are actual experiments or prototypes suitable for publication. Clearly distinguish experiments from shipped products.
 
-### Contact
-A clear contact path, added when a public contact address or channel is selected.
+### Notes — deferred
+Keep hidden until there is at least one publishable article or a clear content plan.
+
+### Contact — deferred
+Add only after a public contact address or channel is selected.
 
 ## 5. Visual direction
 
@@ -61,7 +63,7 @@ Primary identity: the detailed steampunk skull artwork. Secondary signature: Cle
 - Optimize images; prefer appropriate modern formats and responsive sizing.
 - Avoid adding dependencies without a specific requirement.
 - Deployment target: Cloudflare Pages is the current proposal, pending repository and domain setup.
-- CI proposal: install from lockfile, lint, typecheck, tests, and production build.
+- Local verification is the current quality gate: clean lockfile install, lint, typecheck, tests, and production build. GitHub Actions is not part of the current scope.
 
 ## 7. Non-goals for the initial release
 
@@ -90,25 +92,28 @@ Primary identity: the detailed steampunk skull artwork. Secondary signature: Cle
 
 ## 10. Initial acceptance criteria
 
-- [ ] Project scaffold installs cleanly from the lockfile.
-- [ ] Development and production build commands are documented.
-- [ ] Responsive page shell and navigation exist.
-- [ ] Initial page sections follow the approved information architecture.
-- [ ] Logo assets are integrated without destructive modification.
-- [ ] Design tokens cover colors, typography, spacing, and borders.
-- [ ] Lint, typecheck, tests, and build run in CI.
-- [ ] No secrets, private data, or unapproved employer materials are present.
-- [ ] Keyboard navigation and reduced-motion behavior are checked.
-- [ ] Deployment configuration is documented and verified before release.
+- [x] Project scaffold installs cleanly from the lockfile.
+- [x] Development and production build commands are documented.
+- [x] Responsive page shell and navigation exist.
+- [x] Current public sections are implemented: Home, Works, and Workshop.
+- [x] Home, Works, and Workshop use viewport-height compositions without fixed-height content clipping or mandatory scroll snapping.
+- [x] Primary skull artwork is integrated without destructive modification.
+- [ ] Secondary wordmark/silhouette asset is integrated when its approved source is available.
+- [x] Design tokens cover colors, typography, spacing, and borders.
+- [x] Local lint, typecheck, tests, and production build pass (user-confirmed).
+- [ ] Keyboard navigation, contrast, and reduced-motion behavior receive final review.
+- [x] No secrets, private data, or unapproved employer materials are intentionally included in the approved content inventory.
+- [ ] Final domain, social preview image, and deployment configuration are completed and verified before release.
 
-## 11. Open decisions
+## 11. Remaining decisions and work
 
-- Final domain and public contact channel.
-- Final approved logo variants and asset formats.
+- Final domain and corresponding canonical URL.
+- Final Open Graph/social preview image.
+- Approved secondary wordmark/silhouette asset and format, if it will be used.
 - Final font hosting strategy (local or provider-hosted).
-- Exact project content, screenshots, and publication permissions.
-- Final deployment configuration and environment variables, if any.
-- Final motion and interaction specification.
+- Add real project content only when it is ready and approved for public presentation.
+- Final accessibility, responsive, and performance review.
+- Final deployment configuration and release verification.
 
 ## 12. Engineering governance
 
