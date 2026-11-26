@@ -1,6 +1,8 @@
 # Content Inventory — Clementine Work
 
-**Status:** Deployed — approved Works entry published\n**Last reviewed:** 2026-11-26\n**Live site:** https://clementine-work.pages.dev/  
+**Status:** Deployed — approved Works entry published  
+**Last reviewed:** 2026-11-26  
+**Live site:** https://clementine-work.pages.dev/  
 **Publication rule:** Do not present planned work, experiments, services, or a team as existing facts.
 
 ## Identity
@@ -38,8 +40,9 @@
 #### Retail Brand & Category Report
 
 - Type: Independent digital tool.
-- Description: A local-first reporting application that transforms retail sales workbooks into monthly brand and category analysis, with an optional editable PowerPoint business review.
-- Technology: Python 3.11, Streamlit, Pandas, Plotly, OpenPyXL, and python-pptx.
+- Description: A local-first retail reporting tool for monthly brand development, brand growth, category growth, and brand market-share analysis, with an editable, Quantity-led PowerPoint business review. A Windows x64 portable distribution is available.
+- Capabilities: Workbook upload and validation; chronological monthly reporting; consistent numeric and accounting formatting; interactive charts; editable PowerPoint generation; Windows portable packaging.
+- Technology: Python 3.11, Streamlit, Pandas, Plotly, OpenPyXL, python-pptx, and PyInstaller for portable packaging.
 - Screenshots: `public/images/retail-report-generator/image1.png` through `image4.png`.
 - Public status: Published in the live Works collection; source repository is private and intentionally not linked from this site.
 
