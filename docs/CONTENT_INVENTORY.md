@@ -24,7 +24,7 @@
 
 - Current state: One approved selected project — Retail Brand & Category Report.
 - Project positioning: An independent digital tool for workbook-based retail brand/category reporting and editable PowerPoint generation.
-- Public media: Four approved screenshots under `/images/retail-report-generator/`.
+- Public media: Four approved screenshots under `/images/retail-report-generator/` (served from Vite's `public/` directory).
 - Do not imply a team, client relationship, or commercial service offering.
 
 ### Workshop
@@ -40,7 +40,7 @@
 - Type: Independent digital tool.
 - Description: A local-first reporting application that transforms retail sales workbooks into monthly brand and category analysis, with an optional editable PowerPoint business review.
 - Technology: Python 3.11, Streamlit, Pandas, Plotly, OpenPyXL, and python-pptx.
-- Screenshots: `images/retail-report-generator/image1.png` through `image4.png`.
+- Screenshots: `public/images/retail-report-generator/image1.png` through `image4.png`.
 - Public status: Selected project; source repository is not linked from this site.
 
 ## Deferred content
