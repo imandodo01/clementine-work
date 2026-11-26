@@ -264,3 +264,11 @@
     display: none;
   }
 }
+
+
+/* Mobile navigation uses drawer controls only; desktop collapse stays available. */
+@media (max-width: 680px) {
+  .collapseButton {
+    display: none;
+  }
+}
