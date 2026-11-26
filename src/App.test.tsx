@@ -25,6 +25,9 @@ describe("Clementine Work", () => {
     const markup = renderToStaticMarkup(<App />);
     expect(markup).toContain("/images/retail-report-generator/image1.png");
     expect(markup).toContain("/images/retail-report-generator/image4.png");
+    expect(markup).toContain("Previous screenshot");
+    expect(markup).toContain("Next screenshot");
+    expect(markup).toContain("Swipe or scroll to explore screenshots");
     expect(markup).toContain("INDEPENDENT DIGITAL TOOL");
     expect(markup).toContain("INDEPENDENT PRACTICE");
     expect(markup).not.toContain("Our team");
