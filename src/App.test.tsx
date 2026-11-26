@@ -10,7 +10,7 @@ describe("Clementine Work", () => {
     expect(markup).toContain('aria-label="Main navigation"');
     expect(markup).toContain('aria-label="Collapse sidebar"');
     expect(markup).toContain("steampunk-skull");
-    expect(markup).toContain("The collection is taking shape.");
+    expect(markup).toContain("Retail Brand &amp; Category Report");
     expect(markup).toContain("Independent products");
     expect(markup).toContain('id="home"');
     expect(markup).toContain('id="works"');
@@ -23,7 +23,9 @@ describe("Clementine Work", () => {
 
   it("does not invent released products or a team", () => {
     const markup = renderToStaticMarkup(<App />);
-    expect(markup).toContain("Products and projects will appear here");
+    expect(markup).toContain("/images/retail-report-generator/image1.png");
+    expect(markup).toContain("/images/retail-report-generator/image4.png");
+    expect(markup).toContain("INDEPENDENT DIGITAL TOOL");
     expect(markup).toContain("INDEPENDENT PRACTICE");
     expect(markup).not.toContain("Our team");
     expect(markup).not.toContain("Client portfolio");
