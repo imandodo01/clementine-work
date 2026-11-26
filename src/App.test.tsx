@@ -27,7 +27,7 @@ describe("Clementine Work", () => {
     expect(markup).toContain("/images/retail-report-generator/image4.png");
     expect(markup).toContain("Previous screenshot");
     expect(markup).toContain("Next screenshot");
-    expect(markup).toContain("Swipe or scroll to explore screenshots");
+    expect(markup).toContain("Screenshot 1 / 4");
     expect(markup).toContain("INDEPENDENT DIGITAL TOOL");
     expect(markup).toContain("INDEPENDENT PRACTICE");
     expect(markup).not.toContain("Our team");
