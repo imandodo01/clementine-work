@@ -69,15 +69,26 @@ export default function App() {
 
         <section id="works" className={styles.worksSection}>
           <div className={styles.sectionHeading}><div><p className={styles.eyebrow}>01 / WORKS</p><h2>Selected work.</h2></div><span className={styles.sectionMeta}>PUBLIC COLLECTION</span></div>
-          <div className={styles.workstage}>
-            <div className={styles.workstageIndex}>COLLECTION / 00</div>
-            <div className={styles.workstageBody}>
-              <span className={styles.workstageRule} />
-              <h3>The collection is taking shape.</h3>
-              <p>Products and projects will appear here when they are ready for public presentation.</p>
+          <article className={styles.featuredWork}>
+            <div className={styles.featuredWorkHeader}>
+              <span className={styles.workstageIndex}>SELECTED PROJECT / 01</span>
+              <span className={styles.sectionMeta}>INDEPENDENT DIGITAL TOOL</span>
             </div>
-            <span className={styles.workstageMark} aria-hidden="true">CW—</span>
-          </div>
+            <div className={styles.featuredWorkIntro}>
+              <div><p className={styles.eyebrow}>DATA ANALYSIS / REPORTING</p><h3>Retail Brand &amp; Category Report</h3></div>
+              <p>A local-first reporting application that transforms retail sales workbooks into monthly brand and category insights, with an editable PowerPoint business review.</p>
+            </div>
+            <div className={styles.featuredWorkGallery} aria-label="Retail Brand and Category Report application screenshots">
+              <figure><img src="/images/retail-report-generator/image1.png" alt="Workbook upload, worksheet selection, and data validation dashboard" loading="lazy" /><figcaption>01 / Workbook validation</figcaption></figure>
+              <figure><img src="/images/retail-report-generator/image2.png" alt="Controller main category subtotal and subcategory monthly growth tables" loading="lazy" /><figcaption>02 / Controller growth</figcaption></figure>
+              <figure><img src="/images/retail-report-generator/image3.png" alt="Accessories category monthly net sales and quantity growth table" loading="lazy" /><figcaption>03 / Accessories growth</figcaption></figure>
+              <figure><img src="/images/retail-report-generator/image4.png" alt="Product attribute extraction coverage in the presentation generator" loading="lazy" /><figcaption>04 / Presentation generator</figcaption></figure>
+            </div>
+            <div className={styles.featuredWorkFooter}>
+              <span>PYTHON · STREAMLIT · PANDAS · PLOTLY</span>
+              <span>INDEPENDENT PROJECT</span>
+            </div>
+          </article>
         </section>
 
         <section id="workshop" className={styles.workshopSection}>
