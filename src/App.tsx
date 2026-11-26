@@ -78,11 +78,17 @@ export default function App() {
               <div><p className={styles.eyebrow}>DATA ANALYSIS / REPORTING</p><h3>Retail Brand &amp; Category Report</h3></div>
               <p>A local-first reporting application that transforms retail sales workbooks into monthly brand and category insights, with an editable PowerPoint business review.</p>
             </div>
-            <div className={styles.featuredWorkGallery} aria-label="Retail Brand and Category Report application screenshots">
-              <figure><img src="/images/retail-report-generator/image1.png" alt="Workbook upload, worksheet selection, and data validation dashboard" loading="lazy" /><figcaption>01 / Workbook validation</figcaption></figure>
-              <figure><img src="/images/retail-report-generator/image2.png" alt="Controller main category subtotal and subcategory monthly growth tables" loading="lazy" /><figcaption>02 / Controller growth</figcaption></figure>
-              <figure><img src="/images/retail-report-generator/image3.png" alt="Accessories category monthly net sales and quantity growth table" loading="lazy" /><figcaption>03 / Accessories growth</figcaption></figure>
-              <figure><img src="/images/retail-report-generator/image4.png" alt="Product attribute extraction coverage in the presentation generator" loading="lazy" /><figcaption>04 / Presentation generator</figcaption></figure>
+            <div className={styles.featuredWorkSlider}>
+              <div className={styles.featuredWorkGallery} aria-label="Retail Brand and Category Report application screenshots" tabIndex={0}>
+                <figure><img src="/images/retail-report-generator/image1.png" alt="Workbook upload, worksheet selection, and data validation dashboard" loading="lazy" /><figcaption>01 / Workbook validation</figcaption></figure>
+                <figure><img src="/images/retail-report-generator/image2.png" alt="Controller main category subtotal and subcategory monthly growth tables" loading="lazy" /><figcaption>02 / Controller growth</figcaption></figure>
+                <figure><img src="/images/retail-report-generator/image3.png" alt="Accessories category monthly net sales and quantity growth table" loading="lazy" /><figcaption>03 / Accessories growth</figcaption></figure>
+                <figure><img src="/images/retail-report-generator/image4.png" alt="Product attribute extraction coverage in the presentation generator" loading="lazy" /><figcaption>04 / Presentation generator</figcaption></figure>
+              </div>
+              <div className={styles.featuredWorkSliderControls}>
+                <span>Swipe or scroll to explore screenshots</span>
+                <div><button type="button" aria-label="Previous screenshot" onClick={() => document.querySelector('.featuredWorkGallery')?.scrollBy({ left: -((document.querySelector('.featuredWorkGallery') as HTMLElement | null)?.clientWidth ?? 0), behavior: "smooth" })}>←</button><button type="button" aria-label="Next screenshot" onClick={() => document.querySelector('.featuredWorkGallery')?.scrollBy({ left: (document.querySelector('.featuredWorkGallery') as HTMLElement | null)?.clientWidth ?? 0, behavior: "smooth" })}>→</button></div>
+              </div>
             </div>
             <div className={styles.featuredWorkFooter}>
               <span>PYTHON · STREAMLIT · PANDAS · PLOTLY</span>
