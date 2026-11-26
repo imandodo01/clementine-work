@@ -22,15 +22,26 @@
 
 ### Works
 
-- Current state: No Clementine Work-branded projects approved for this public collection yet.
-- Empty-state copy: The collection is taking shape. Products and projects will appear here when they are ready for public presentation.
-- Do not automatically list personal projects from Iman Portfolio as Clementine Work products.
+- Current state: One approved selected project — Retail Brand & Category Report.
+- Project positioning: An independent digital tool for workbook-based retail brand/category reporting and editable PowerPoint generation.
+- Public media: Four approved screenshots under `/images/retail-report-generator/`.
+- Do not imply a team, client relationship, or commercial service offering.
 
 ### Workshop
 
 - Independent products: Small, focused digital products developed independently.
 - Digital solutions: Practical software shaped around real problems and needs.
 - Engineering explorations: Technical experiments and ideas explored through making.
+
+### Works — approved project
+
+#### Retail Brand & Category Report
+
+- Type: Independent digital tool.
+- Description: A local-first reporting application that transforms retail sales workbooks into monthly brand and category analysis, with an optional editable PowerPoint business review.
+- Technology: Python 3.11, Streamlit, Pandas, Plotly, OpenPyXL, and python-pptx.
+- Screenshots: `images/retail-report-generator/image1.png` through `image4.png`.
+- Public status: Selected project; source repository is not linked from this site.
 
 ## Deferred content
 

@@ -28,7 +28,7 @@ The current public page is a single-page workshop site with these sections:
 Workshop identity, concise positioning, primary visual emblem, and primary calls to action. Uses a viewport-height editorial composition.
 
 ### Works
-Selected products and projects, with accurate status, role, scope, and public links. Currently displays an intentional empty state; do not automatically import personal projects from Iman Portfolio. Uses a viewport-height editorial composition.
+Selected products and projects, with accurate status, role, scope, and public links. Includes the explicitly approved Retail Brand & Category Report as a selected independent digital tool. Do not import additional personal projects without a separate approval. Uses a viewport-height editorial composition.
 
 ### Workshop
 What Clementine Work is, its working principles, and the three activity areas: independent products, digital solutions, and engineering explorations. Uses a viewport-height editorial composition.
@@ -118,3 +118,8 @@ Primary identity: the detailed steampunk skull artwork. Secondary signature: Cle
 ## 12. Engineering governance
 
 Follow the current repository guidance and the user's [AI Engineering Standard](https://github.com/imandodo01/ai-engineering-standard). Before implementation, read its current `AGENTS.md` and relevant policies, then inspect this repository's instructions, structure, and Git state. Keep changes small, verify them, inspect the final diff, and report checks actually performed.
+
+
+## Approved Works entry — Retail Brand & Category Report
+
+The Works collection may feature the Retail Brand & Category Report as an independently developed digital tool. Use the four approved screenshots under `images/retail-report-generator/`. Keep the presentation focused on the application and its reporting workflow. Do not imply a team, client roster, commercial service, or link to its private source repository. The project is an explicit exception to the general rule against automatically importing personal projects from Iman Portfolio.
