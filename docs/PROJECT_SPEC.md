@@ -122,4 +122,4 @@ Follow the current repository guidance and the user's [AI Engineering Standard](
 
 ## Approved Works entry — Retail Brand & Category Report
 
-The Works collection may feature the Retail Brand & Category Report as an independently developed digital tool. Use the four approved screenshots under `images/retail-report-generator/`. Keep the presentation focused on the application and its reporting workflow. Do not imply a team, client roster, commercial service, or link to its private source repository. The project is an explicit exception to the general rule against automatically importing personal projects from Iman Portfolio.
+The Works collection may feature the Retail Brand & Category Report as an independently developed digital tool. Use the four approved screenshots under `public/images/retail-report-generator/`. Keep the presentation focused on the application and its reporting workflow. Do not imply a team, client roster, commercial service, or link to its private source repository. The project is an explicit exception to the general rule against automatically importing personal projects from Iman Portfolio.
