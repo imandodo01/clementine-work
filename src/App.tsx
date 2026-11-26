@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import styles from "./App.module.css";
 import skullArtwork from "../images/steampunk-skull.png";
 
@@ -21,6 +21,9 @@ export default function App() {
   const [collapsed, setCollapsed] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [active, setActive] = useState("#home");
+  const screenshotGalleryRef = useRef<HTMLDivElement>(null);
+  const [screenshotIndex, setScreenshotIndex] = useState(0);
+  const scrollScreenshot = (direction: number) => screenshotGalleryRef.current?.scrollBy({ left: direction * screenshotGalleryRef.current.clientWidth, behavior: "smooth" });
   const closeMobile = () => setMobileOpen(false);
 
   return (
@@ -79,15 +82,15 @@ export default function App() {
               <p>A local-first reporting application that transforms retail sales workbooks into monthly brand and category insights, with an editable PowerPoint business review.</p>
             </div>
             <div className={styles.featuredWorkSlider}>
-              <div className={styles.featuredWorkGallery} aria-label="Retail Brand and Category Report application screenshots" tabIndex={0}>
+              <div className={styles.featuredWorkGallery} ref={screenshotGalleryRef} aria-label="Retail Brand and Category Report application screenshots" tabIndex={0} onScroll={(event) => setScreenshotIndex(Math.round(event.currentTarget.scrollLeft / event.currentTarget.clientWidth))}>
                 <figure><img src="/images/retail-report-generator/image1.png" alt="Workbook upload, worksheet selection, and data validation dashboard" loading="lazy" /><figcaption>01 / Workbook validation</figcaption></figure>
                 <figure><img src="/images/retail-report-generator/image2.png" alt="Controller main category subtotal and subcategory monthly growth tables" loading="lazy" /><figcaption>02 / Controller growth</figcaption></figure>
                 <figure><img src="/images/retail-report-generator/image3.png" alt="Accessories category monthly net sales and quantity growth table" loading="lazy" /><figcaption>03 / Accessories growth</figcaption></figure>
                 <figure><img src="/images/retail-report-generator/image4.png" alt="Product attribute extraction coverage in the presentation generator" loading="lazy" /><figcaption>04 / Presentation generator</figcaption></figure>
               </div>
               <div className={styles.featuredWorkSliderControls}>
-                <span>Swipe or scroll to explore screenshots</span>
-                <div><button type="button" aria-label="Previous screenshot" onClick={() => document.querySelector('.featuredWorkGallery')?.scrollBy({ left: -((document.querySelector('.featuredWorkGallery') as HTMLElement | null)?.clientWidth ?? 0), behavior: "smooth" })}>←</button><button type="button" aria-label="Next screenshot" onClick={() => document.querySelector('.featuredWorkGallery')?.scrollBy({ left: (document.querySelector('.featuredWorkGallery') as HTMLElement | null)?.clientWidth ?? 0, behavior: "smooth" })}>→</button></div>
+                <span>Screenshot {screenshotIndex + 1} / 4</span>
+                <div><button type="button" aria-label="Previous screenshot" onClick={() => scrollScreenshot(-1)} disabled={screenshotIndex === 0}>←</button><button type="button" aria-label="Next screenshot" onClick={() => scrollScreenshot(1)} disabled={screenshotIndex === 3}>→</button></div>
               </div>
             </div>
             <div className={styles.featuredWorkFooter}>
