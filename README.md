@@ -6,7 +6,9 @@
 
 The website is deployed on Cloudflare Pages. The Works collection features the approved Retail Brand & Category Report as an independent digital tool, with four application screenshots. The site is in post-deployment maintenance and ongoing content refinement.
 
-**Live site:** https://clementine-work.pages.dev/\n\n## Requirements
+**Live site:** https://clementine-work.pages.dev/
+
+## Requirements
 
 - Node.js 22 LTS
 - npm 10 or compatible

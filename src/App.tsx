@@ -79,7 +79,7 @@ export default function App() {
             </div>
             <div className={styles.featuredWorkIntro}>
               <div><p className={styles.eyebrow}>DATA ANALYSIS / REPORTING</p><h3>Retail Brand &amp; Category Report</h3></div>
-              <p>A local-first reporting application that transforms retail sales workbooks into monthly brand and category insights, with an editable PowerPoint business review.</p>
+              <p>A local-first retail reporting tool for monthly brand and category performance, market-share analysis, and an editable, Quantity-led PowerPoint business review. A Windows x64 portable build is also available.</p>
             </div>
             <div className={styles.featuredWorkSlider}>
               <div className={styles.featuredWorkGallery} ref={screenshotGalleryRef} aria-label="Retail Brand and Category Report application screenshots" tabIndex={0} onScroll={(event) => setScreenshotIndex(Math.round(event.currentTarget.scrollLeft / event.currentTarget.clientWidth))}>
@@ -94,7 +94,7 @@ export default function App() {
               </div>
             </div>
             <div className={styles.featuredWorkFooter}>
-              <span>PYTHON · STREAMLIT · PANDAS · PLOTLY</span>
+              <span>PYTHON · STREAMLIT · PANDAS · PLOTLY · OPENPYXL · PYTHON-PPTX</span>
               <span>INDEPENDENT PROJECT</span>
             </div>
           </article>
