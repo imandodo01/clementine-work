@@ -4,9 +4,9 @@
 
 ## Project status
 
-The visual identity, page structure, and development foundation are in place. The project is now in the **content refinement and pre-release** phase. The Works collection intentionally remains in an honest empty state until there are projects approved for public presentation.
+The website is deployed on Cloudflare Pages. The Works collection features the approved Retail Brand & Category Report as an independent digital tool, with four application screenshots. The site is in post-deployment maintenance and ongoing content refinement.
 
-## Requirements
+**Live site:** https://clementine-work.pages.dev/\n\n## Requirements
 
 - Node.js 22 LTS
 - npm 10 or compatible

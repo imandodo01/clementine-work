@@ -1,6 +1,6 @@
 # Project Specification — Clementine Work
 
-**Status:** Active — content refinement and pre-release  
+**Status:** Deployed — post-release maintenance and content refinement  
 **Product type:** Static frontend website  
 **Tagline:** An Independent Digital Workshop
 
@@ -62,7 +62,7 @@ Primary identity: the detailed steampunk skull artwork. Secondary signature: Cle
 - Respect `prefers-reduced-motion`.
 - Optimize images; prefer appropriate modern formats and responsive sizing.
 - Avoid adding dependencies without a specific requirement.
-- Deployment target: Cloudflare Pages is the current proposal, pending repository and domain setup.
+- Deployment: Cloudflare Pages; live site: https://clementine-work.pages.dev/.
 - Local verification is the current quality gate: clean lockfile install, lint, typecheck, tests, and production build. GitHub Actions is not part of the current scope.
 
 ## 7. Non-goals for the initial release
@@ -111,7 +111,7 @@ Primary identity: the detailed steampunk skull artwork. Secondary signature: Cle
 - Final Open Graph/social preview image.
 - Approved secondary wordmark/silhouette asset and format, if it will be used.
 - Final font hosting strategy (local or provider-hosted).
-- Add real project content only when it is ready and approved for public presentation.
+- Add further project content only when it is ready and explicitly approved for public presentation.
 - Final accessibility, responsive, and performance review.
 - Final deployment configuration and release verification.
 

@@ -1,6 +1,6 @@
 # Content Inventory — Clementine Work
 
-**Status:** Content refinement — working draft  
+**Status:** Deployed — approved Works entry published\n**Last reviewed:** 2026-11-26\n**Live site:** https://clementine-work.pages.dev/  
 **Publication rule:** Do not present planned work, experiments, services, or a team as existing facts.
 
 ## Identity
@@ -41,7 +41,7 @@
 - Description: A local-first reporting application that transforms retail sales workbooks into monthly brand and category analysis, with an optional editable PowerPoint business review.
 - Technology: Python 3.11, Streamlit, Pandas, Plotly, OpenPyXL, and python-pptx.
 - Screenshots: `public/images/retail-report-generator/image1.png` through `image4.png`.
-- Public status: Selected project; source repository is not linked from this site.
+- Public status: Published in the live Works collection; source repository is private and intentionally not linked from this site.
 
 ## Deferred content
 
@@ -60,7 +60,7 @@
 
 ## Content refinement backlog
 
-- Add real, approved project entries to Works when a product or project is ready for public presentation.
+- Add further Works entries only when another product or project is explicitly approved for public presentation.
 - Review the workshop introduction and activity descriptions for clarity and consistency.
 - Decide whether the approved secondary wordmark/silhouette asset will be included.
 - Complete an editorial pass for consistency, clarity, and fit with the implemented layout.
