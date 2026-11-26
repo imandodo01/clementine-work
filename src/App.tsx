@@ -60,12 +60,9 @@ export default function App() {
             <p className={styles.heroIntro}>An independent digital workshop for building useful products, crafting digital solutions, and exploring software engineering.</p>
             <a className={styles.primaryAction} href="#works">Explore the work <span aria-hidden="true">↘</span></a>
           </div>
-          <div className={styles.heroEmblem} aria-hidden="true">
-            <div className={styles.emblemFrame}>
-              <img src={skullArtwork} alt="" />
-              <span className={styles.emblemMark}>CW / 001</span>
-            </div>
-            <span className={styles.drawingLabel}>DESIGN / ENGINEERING / ITERATION</span>
+          <div className={styles.heroVisual} aria-hidden="true">
+            <img src={skullArtwork} alt="" />
+            <span>DESIGN / ENGINEERING / ITERATION</span>
           </div>
           <div className={styles.heroFoot}><span>INDEPENDENT PRACTICE</span><span>INDUSTRIAL STEAMPUNK × FUTURISTIC BLUEPRINT</span></div>
         </section>
